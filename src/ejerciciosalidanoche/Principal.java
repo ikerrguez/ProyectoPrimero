@@ -22,16 +22,16 @@ public class Principal {
         System.out.println(nombreCliente + " tiene " + edadCliente + " años y " + dineroCliente+ " euros ");
         System.out.println("Buenas noches. Si quieres entrar en la discoteca debes ser mayor de edad.");
 
-         int edadPermitida= 18;
-        if (edadCliente<edadPermitida) {
-            System.out.println("No puedes entrar en la discoetca");
-        }else{
-            System.out.println("Tienes el paso permitido a la discoteca");
-        }
 
-        System.out.println("¿Qué te gustaría beber?");
-        
+        if (18>edadCliente) {
+            System.out.println("No puedes entrar en la discoetca, vete a casa");
+        }else if (18<=edadCliente) {
+            System.out.println("Tienes el paso permitido a la discoteca");
+
+            System.out.println("Me voy a tomar una caña");
+
+
 
 
     }
-}
+}}
